@@ -1,0 +1,51 @@
+body {
+  background-image: url(/img/ricepaper2.png);
+}
+
+.container {
+  margin-left: 0px
+}
+
+.namefont {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#div-height {
+  height: 140px;
+  padding-top: 55px;
+}
+
+.headshot-thumbnail {
+  height: 140px;
+}
+
+.logo {
+  height: 20px;
+}
+
+.line {
+  border-top: 1px solid #221F1F;
+}
+
+.contact-height {
+  height: 20px;
+}
+
+/*.debug {
+  border: 1px solid #990000;
+}*/
+
+.button_background {
+  background-image: url(/img/ricepaper2.png);
+}
+
+.line {
+  border-top: 1px solid #221F1F;
+}
+
+.btn-dim {
+  /*height: 18px;*/
+  width: 50px;
+  padding: 0px;
+}
