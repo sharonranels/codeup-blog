@@ -16,17 +16,41 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('/resume', function()
+{
+    return View::make('resume');
+});
+
+
+Route::get('/portfolio', function()
+{
+    return View::make('portfolio');
+});
+
 Route::get('/sayhello/{name}', function($name)
 {
-    if ($name == "Chris")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return "Hello, $name!";
-    }
+
+	$data = array(
+		'name' => $name
+	);
+
+    return View::make('my-first-view')->with($data);
 });
+
+
+Route::get('/rolldice/{guess}', function($guess)
+{
+	$random = rand(1,6);
+
+	$data = array(
+			'random' => $random,
+			'guess' => $guess
+		);
+    return View::make('roll-dice')->with($data);
+});
+
+
+
 
 
 
