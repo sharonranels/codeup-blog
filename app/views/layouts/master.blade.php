@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sharon Ranels</title>
 
-    <link rel="stylesheet" href="/css/resume-portfolio-styling.css">
 
 
     <!-- Bootstrap -->
@@ -14,6 +13,7 @@
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+     <link rel="stylesheet" href="/css/resume-portfolio-styling.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -56,7 +56,11 @@
   </div><!-- /.container-fluid -->
 </nav>
  
+<div class="container">
+
  @yield('content')
+
+</div>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
