@@ -16,25 +16,16 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/resume', function()
-{
-    return View::make('resume');
-});
+Route::get('/resume', 'HomeController@showResume');
 
-
-Route::get('/portfolio', function()
-{
-    return View::make('portfolio');
-});
+Route::get('/portfolio', 'HomeController@showPortfolio');
 
 Route::get('/sayhello/{name}', function($name)
 {
-
 	$data = array(
-		'name' => $name
+	'name' => $name
 	);
-
-    return View::make('my-first-view')->with($data);
+	return View::make('my-first-view')->with($data);
 });
 
 
