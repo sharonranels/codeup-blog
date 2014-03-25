@@ -3,9 +3,6 @@
 @section('content')
 
 
-<!-- CONTAINER -->
-
-<div class="container">
 
 
 <!-- Add columns for name and info -->
@@ -78,8 +75,6 @@
       </div> --> <!-- End Portfolio Entry #3 -->
 
     </div>
-
-</div>
 
 @stop
 

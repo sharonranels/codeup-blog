@@ -3,7 +3,6 @@
 @section('content')
 
 <!-- Add columns for name and info -->
-<div class="container">
   
   <div class="row">
     <div class="col-md-3"><img src="/img/Sharon.jpg" alt="Sharon Ranels" class="headshot-thumbnail"></div>
@@ -294,6 +293,5 @@
   
     </div>
 
-</div>
 
 @stop
