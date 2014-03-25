@@ -40,6 +40,8 @@ Route::get('/rolldice/{guess}', function($guess)
     return View::make('roll-dice')->with($data);
 });
 
+Route::resource('posts', 'PostsController');
+
 
 
 
