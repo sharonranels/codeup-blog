@@ -19,8 +19,8 @@ Route::get('/', function()
 
 Route::get('orm-test', function () {
 	$post1 = new Post();
-	$post1->title = "title 1";
-	$post1->body = "This is body 1";
+	$post1->title = "title 2";
+	$post1->body = "This is body 2";
 	$post1->save();
 
 
