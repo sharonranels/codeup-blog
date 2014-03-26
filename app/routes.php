@@ -17,6 +17,15 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('orm-test', function () {
+	$post1 = new Post();
+	$post1->title = "title 1";
+	$post1->body = "This is body 1";
+	$post1->save();
+
+
+});
+
 Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
