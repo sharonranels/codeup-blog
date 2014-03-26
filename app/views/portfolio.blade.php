@@ -39,22 +39,21 @@
       </div>  <!-- End Portfolio Entry #1 -->
       
       <!-- Portfolio Entry #2 -->
-      <!-- <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="thumbnail item_box">
-          <img src="/img/todo-screenshot.png" alt="Todo List" class="screenshot-thumbnail">
+          <img src="/img/whackscreen.png" alt="Whack-A-Mole screenshot" class="screenshot-thumbnail">
           <div class="caption">
-            <h3 class="text-center"><u>To Do List</u></h3>
-            <p>This To Do list allows the user to:</p>
+            <h3 class="text-center"><u>Whack-A-Mole Game</u></h3>
+            <p>This game has the following features:</p>
             <ul class="port-details">
-              <li>Add new individual items to the list</li>
-              <li>Upload a new file that will either add items onto the existing file or overwrite the existing items.</li>
-              <li>Remove individual items from the list</li>
+              <li>Game-time count-down</li>
+              <li>High-score tracker</li>
+              <li>Hit and miss counter</li>
             </ul>
-            <p>The user will also be notified and asked to retry if the item entry is too long or too short.</p>
-            <p><a href="https://github.com/sharonranels/codeup.dev/blob/master/public/todo-list.php" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
+            <p><a href="https://github.com/sharonranels/codeup.dev/blob/master/public/Whack.html" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
           </div>
         </div>
-      </div> -->  <!-- End Portfolio Entry #2 -->
+      </div>  <!-- End Portfolio Entry #2 -->
       
       <!-- Portfolio Entry #3
       <div class="col-sm-6 col-md-4">
