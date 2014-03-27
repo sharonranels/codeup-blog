@@ -66,7 +66,7 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post = Post::findOrFail($id);
-		return View::make('posts.show')->with(array('post' => $post));
+		return View::make('posts.show')->with('post', $post);
 	}
 
 	/**
@@ -89,7 +89,31 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return 'this updates a specific post';
+		
+		$post = Post::findOrFail($id);
+
+		// create the validator
+    	$validator = Validator::make(Input::all(), Post::$rules);
+
+    	// attempt validation
+    	if ($validator->fails())
+    	{
+        // validation failed, redirect to the post create page with validation errors and old inputs
+        return Redirect::back()->withInput()->withErrors($validator);
+    	
+    	} else {
+			
+			// Save to db
+
+			
+
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+
+			$post->save();
+			
+			return Redirect::action('PostsController@show', $post->id);
+	    }
 	}
 
 	/**

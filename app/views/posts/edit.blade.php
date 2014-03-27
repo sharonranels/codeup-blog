@@ -9,7 +9,7 @@
 
 
 <div class="blog-post">
-	{{ Form::open(array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class'=>'form-horizontal')) }}
+	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class'=>'form-horizontal')) }}
 
 	  <div class="form-group {{ $errors->has('title') ? "has-error" : '' }}">
 	    <label for="title" class="col-sm-2 control-label">Title</label>
@@ -29,7 +29,7 @@
 	  </div>
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-10">
-	      <button type="submit" class="btn btn-default">Create Post</button>
+	      <button type="submit" class="btn btn-default">Submit Changes</button>
 	    </div>
 	  </div>
 	{{ Form::close() }}
