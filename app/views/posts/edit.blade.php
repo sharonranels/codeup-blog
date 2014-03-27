@@ -3,13 +3,13 @@
 @section('content')
 
  <div class="blog-header">
-    <h1 class="blog-title">Welcome to my Blog!</h1>
+    <h1 class="blog-title">Edit Post</h1>
     <p class="lead blog-description"><em><strong>The Blog site of Sharon Ranels</em></strong></p>
   </div>
 
 
 <div class="blog-post">
-	{{ Form::open(array('action' => 'PostsController@store', "class"=>"form-horizontal")) }}
+	{{ Form::open(array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class'=>'form-horizontal')) }}
 
 	  <div class="form-group {{ $errors->has('title') ? "has-error" : '' }}">
 	    <label for="title" class="col-sm-2 control-label">Title</label>
