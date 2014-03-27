@@ -14,7 +14,7 @@
 	    <label for="title" class="col-sm-2 control-label">Title</label>
 	    <div class="col-sm-10">
 	      <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="{{{ Input::old('title') }}}"><br>
-		
+		<!-- Validate errors -->
 		{{ $errors->has('title') ? $errors->first('title', '<p><span class="help-block">:message</span></p>') : ''}}
 	    
 	    </div>
@@ -23,7 +23,7 @@
 	    <label for="body" class="col-sm-2 control-label">Body</label>
 	    <div class="col-sm-10">
 	      <textarea name="body" class="form-control" rows="5">{{{ Input::old('body') }}}</textarea><br>
-
+		<!-- Validate errors -->
 		{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : ''}}
 
 	    </div>

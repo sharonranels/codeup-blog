@@ -49,3 +49,9 @@ body {
   width: 50px;
   padding: 0px;
 }
+
+.help-block {
+  font-style: italic;
+  color: red;
+  font-weight: bold;
+}
