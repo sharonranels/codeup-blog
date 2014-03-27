@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="blog-header">
-	<h1 class="blog-title">Welcome to my Blog!</h1>
+	<h1 class="blog-title">List of all blogs</h1>
 	<p class="lead blog-description"><em><strong>The Blog site of Sharon Ranels</em></strong></p>
 </div>
 
