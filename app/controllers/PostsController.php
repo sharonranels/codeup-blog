@@ -32,18 +32,17 @@ class PostsController extends \BaseController {
 	{
 		
 		// create the validator
-    $validator = Validator::make(Input::all(), Post::$rules);
+    	$validator = Validator::make(Input::all(), Post::$rules);
 
-    // attempt validation
-    if ($validator->fails())
-    {
+    	// attempt validation
+    	if ($validator->fails())
+    	{
         // validation failed, redirect to the post create page with validation errors and old inputs
         return Redirect::back()->withInput()->withErrors($validator);
     	
     	} else {
 			
 			// Save to db
-			LOG::info(Input::all());
 
 			$post = new Post();
 
@@ -53,9 +52,6 @@ class PostsController extends \BaseController {
 			$post->save();
 			
 			return Redirect::action('PostsController@index');
-
-			//return Redirect::back()->withInput();
-		        // validation succeeded, create and save the post
 	    }
 
 
@@ -81,7 +77,8 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return 'this is the page that shows a form for editing a specifi post';
+		$post = Post::findOrFail($id);
+		return View::make('posts.edit')->with('post', $post);
 	}
 
 	/**
