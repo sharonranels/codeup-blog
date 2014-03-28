@@ -9,13 +9,15 @@
 
 <p><a href="{{{ action( 'PostsController@create') }}}">Create new blog</a></p>
 
-
 @foreach ($posts as $post)
+
 <div>
 	<h2><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
 	<p>{{{ Str::words($post->body, 8) }}}</p>
 	<p>{{{ $post->created_at }}}</p>
 </div>
 @endforeach
+
+{{ $posts->links() }}
 
 @stop
