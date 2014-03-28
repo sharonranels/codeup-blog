@@ -51,8 +51,9 @@
     
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
+        <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
         <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
+        <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
