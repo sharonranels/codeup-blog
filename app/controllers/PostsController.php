@@ -37,8 +37,10 @@ class PostsController extends \BaseController {
     	// attempt validation
     	if ($validator->fails())
     	{
+        
+    		Session::flash('errorMessage', "Post could not be created - see form errors");
         // validation failed, redirect to the post create page with validation errors and old inputs
-        return Redirect::back()->withInput()->withErrors($validator);
+        	return Redirect::back()->withInput()->withErrors($validator);
     	
     	} else {
 			
@@ -50,6 +52,8 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 
 			$post->save();
+
+			Session::flash('successMessage', "Post created successfully");
 			
 			return Redirect::action('PostsController@index');
 	    }
@@ -97,9 +101,11 @@ class PostsController extends \BaseController {
 
     	// attempt validation
     	if ($validator->fails())
+
     	{
-        // validation failed, redirect to the post create page with validation errors and old inputs
-        return Redirect::back()->withInput()->withErrors($validator);
+        	Session::flash('errorMessage', "Post could not be changed - see form errors");
+        	// validation failed, redirect to the post create page with validation errors and old inputs
+        	return Redirect::back()->withInput()->withErrors($validator);
     	
     	} else {
 			
@@ -111,6 +117,8 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 
 			$post->save();
+
+			Session::flash('successMessage', "Post was successfully changed");
 			
 			return Redirect::action('PostsController@show', $post->id);
 	    }
@@ -125,6 +133,7 @@ class PostsController extends \BaseController {
 	public function destroy($id)
 	{
 		Post::find($id)->delete();
+		Session::flash('successMessage', "Delete was successful");
 		return Redirect::action('PostsController@index');
 	}
 
