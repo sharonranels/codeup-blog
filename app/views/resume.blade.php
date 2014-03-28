@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-md-3"><img src="/img/Sharon.jpg" alt="Sharon Ranels" class="headshot-thumbnail"></div>
     <div class="col-md-9" id="div-height"><em><strong class="namefont">Sharon Ranels</strong></em>
-    Junior Software Developer</div>
+    Web Developer</div>
   </div>
 
   <hr class="line">
