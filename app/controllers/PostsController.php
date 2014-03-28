@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('posts.create');
+		return View::make('posts.create')->with('post', new Post());
 	}
 
 	/**
@@ -124,7 +124,8 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return 'this deletes a specific post';
+		Post::find($id)->delete();
+		return Redirect::action('PostsController@index');
 	}
 
 }
