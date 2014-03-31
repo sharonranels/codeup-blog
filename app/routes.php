@@ -12,19 +12,16 @@
 */
 
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@showResume');
 
-Route::get('orm-test', function () {
-	$post1 = new Post();
-	$post1->title = "title 2";
-	$post1->body = "This is body 2";
-	$post1->save();
+// Route::get('orm-test', function () {
+// 	$post1 = new Post();
+// 	$post1->title = "title 2";
+// 	$post1->body = "This is body 2";
+// 	$post1->save();
 
 
-});
+// });
 
 Route::get('/resume', 'HomeController@showResume');
 
