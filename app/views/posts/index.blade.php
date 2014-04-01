@@ -29,12 +29,12 @@
 		<p>By: {{{ $post->user->email }}}</p>
 		<p>{{{ Str::words($post->body, 40) }}}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
+		<hr class="line">
 	</div>
 
 @endforeach
 
 {{ $posts->appends(array('search' => Input::get('search')))->links() }}
 
-<hr class="line">
 
 @stop
