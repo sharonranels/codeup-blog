@@ -23,6 +23,8 @@ Route::get('/', 'HomeController@showResume');
 Route::get('/login', 'HomeController@showLogin');
 Route::post('/login', 'HomeController@doLogin');
 
+Route::get('/logout', 'HomeController@logout');
+
 // Route::get('orm-test', function () {
 // 	$post1 = new Post();
 // 	$post1->title = "title 2";
