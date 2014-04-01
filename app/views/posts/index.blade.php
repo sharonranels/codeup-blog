@@ -13,7 +13,7 @@
     
 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
     <div class="input-prepend">
-        <button type="submit" class="btn">Search Title:</button>
+        <button type="submit" class="btn">Search for key word(s):</button>
         <input type="text" class="span2 search-query" name="search">
 
     </div>
