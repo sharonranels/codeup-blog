@@ -56,7 +56,7 @@
         <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
         <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
         @if (Auth::check())
-        <li><a href="{{{ action('HomeController@logout') }}}">Logout</a></li>
+        <li><a href="{{{ action('HomeController@logout') }}}">Logout ({{{ Auth::user()->email }}})</a></li>
         @else
         <li><a href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
         @endif

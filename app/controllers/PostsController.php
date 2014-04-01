@@ -23,11 +23,12 @@ class PostsController extends \BaseController {
 	{
 		$search = Input::get('search', '');
 		$posts = Post::with('user')
-		->orderBy('created_at', 'desc')
-		->where('title', 'LIKE', "%{$search}%")
-		->orWhere('body', 'LIKE', "%{$search}%")
-		// ->orWhere('email', 'LIKE', "%{$search}%")
-		->paginate(4);
+			->join('users', 'posts.user_id', '=', 'users.id')
+			->orderBy('posts.created_at', 'desc')
+			->where('title', 'LIKE', "%{$search}%")
+			->orWhere('body', 'LIKE', "%{$search}%")
+			->orWhere('email', 'LIKE', "%{$search}%")
+			->paginate(4);
 		return View::make('posts.index')->with(array('posts' => $posts));
 	}
 
@@ -66,7 +67,7 @@ class PostsController extends \BaseController {
 			// Save to db
 
 			$post = new Post();
-			$post->user_id=1;
+			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
