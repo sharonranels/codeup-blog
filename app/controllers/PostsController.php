@@ -22,7 +22,8 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$search = Input::get('search', '');
-		$posts = Post::orderBy('created_at', 'desc')
+		$posts = Post::with('user')
+		->orderBy('created_at', 'desc')
 		->where('title', 'LIKE', "%{$search}%")
 		->orWhere('body', 'LIKE', "%{$search}%")
 		->paginate(4);
@@ -64,10 +65,9 @@ class PostsController extends \BaseController {
 			// Save to db
 
 			$post = new Post();
-
+			$post->user_id=1;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
-
 			$post->save();
 
 			Session::flash('successMessage', "Post created successfully");
@@ -128,11 +128,8 @@ class PostsController extends \BaseController {
 			
 			// Save to db
 
-			
-
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
-
 			$post->save();
 
 			Session::flash('successMessage', "Post was successfully changed");
