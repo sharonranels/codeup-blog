@@ -9,6 +9,19 @@
 
 <p><a href="{{{ action( 'PostsController@create') }}}">Create new blog</a></p>
 
+<br>
+    
+{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
+    <div class="input-prepend">
+        <button type="submit" class="btn">Search Title:</button>
+        <input type="text" class="span2 search-query" name="search">
+
+    </div>
+{{ Form::close()}}
+
+<br>
+
+
 @foreach ($posts as $post)
 	<div>
 		<h2><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
