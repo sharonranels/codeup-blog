@@ -30,5 +30,14 @@ class HomeController extends BaseController {
 		return View::make('portfolio');
 	}
 
+	public function showLogin()
+	{
+		return View::make('login');
+	}
+
+	public function doLogin()
+	{
+		return View::make('hello');
+	}
 
 }
