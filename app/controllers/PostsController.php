@@ -21,9 +21,11 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::orderBy('created_at', 'desc')->paginate(4);
+		$search = Input::get('search', '');
+		$posts = Post::orderBy('created_at', 'desc')->where('title', 'LIKE', "%{$search}%")->paginate(4);
 		return View::make('posts.index')->with(array('posts' => $posts));
 	}
+
 
 	/**
 	 * Show the form for creating a new resource.
