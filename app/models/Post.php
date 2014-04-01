@@ -6,9 +6,14 @@ class Post extends BaseModel {
 
     protected $table = 'posts';
 
+
+    // Define relationship to user (author)
+    public function user()
+    {
+    	return $this->belongsTo('User');
+    }
+
     // Validation rules
-
-
 
     public static $rules = array(
     'title'      => 'required|max:100',
@@ -20,6 +25,7 @@ class Post extends BaseModel {
 	    $utc = Carbon::createFromFormat($this->getDateFormat(), $value);
 	    return $utc->setTimezone('America/Chicago');
 	}
+
 
 
 }

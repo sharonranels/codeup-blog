@@ -9,6 +9,7 @@
 
 	<div>
 		<h2>{{{ $post->title }}}</h2>
+		<p>By: {{{ $post->user->email }}}</p>
 		<p>{{{ $post->body }}}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
 	</div>

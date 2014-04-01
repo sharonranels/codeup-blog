@@ -12,6 +12,12 @@
 */
 
 
+/* Uncomment to Log Eloquent Queries */
+// Event::listen('illuminate.query', function($sql, $bindings, $time){
+//   Log::info($sql);
+//   Log::info(implode($bindings, ', '));
+// });
+
 Route::get('/', 'HomeController@showResume');
 
 // Route::get('orm-test', function () {
@@ -22,6 +28,19 @@ Route::get('/', 'HomeController@showResume');
 
 
 // });
+
+
+Route::get('post-test', function () {
+	
+	$user = User::first();
+	$post = new Post();
+	$post->user_id = $user->id;
+	$post->title = "title 2";
+	$post->body = "This is body 2";
+	$post->save();
+
+
+});
 
 Route::get('/resume', 'HomeController@showResume');
 

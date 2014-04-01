@@ -7,9 +7,11 @@
 	<p class="lead blog-description"><em><strong>The Blog site of Sharon Ranels</em></strong></p>
 </div>
 
+<hr class="line">
+
 <p><a href="{{{ action( 'PostsController@create') }}}">Create new blog</a></p>
 
-<br>
+<hr class="line">
     
 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
     <div class="input-prepend">
@@ -19,19 +21,20 @@
     </div>
 {{ Form::close()}}
 
-<br>
-
+<hr class="line">
 
 @foreach ($posts as $post)
 	<div>
 		<h2><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
+		<p>By: {{{ $post->user->email }}}</p>
 		<p>{{{ Str::words($post->body, 40) }}}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
-		<hr class="line">
 	</div>
 
 @endforeach
 
-{{ $posts->links() }}
+{{ $posts->appends(array('search' => Input::get('search')))->links() }}
+
+<hr class="line">
 
 @stop
