@@ -24,9 +24,13 @@
 	    <div class="col-sm-10">
 	    {{Form::textarea('body', null, array('class' => 'form-control')) }}
 		{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : ''}}
-
 	    </div>
 	  </div>
+
+	<span class="btn btn-default btn-file">
+    	Browse <input type="file">
+	</span>
+
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-10">
 	      <button type="submit" class="btn btn-default">Submit Changes</button>
