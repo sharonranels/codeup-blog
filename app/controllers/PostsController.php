@@ -70,6 +70,16 @@ class PostsController extends \BaseController {
 			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+
+			if (Input::hasFile('image'))
+			{
+				$destinationPath = public_path() . '/uploads/';
+				$extension = Input::file('image')->getClientOriginalExtension();
+				$fileName = uniqid() . $extension;
+				Input::file('image')->move($destinationPath, $fileName);
+				$post->post_image = '/uploads/' . $fileName;
+			
+			}
 			$post->save();
 
 			Session::flash('successMessage', "Post created successfully");
