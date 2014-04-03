@@ -52,6 +52,7 @@
     
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
         <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
         <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
         <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
