@@ -3,53 +3,47 @@
 @section('content')
 
 <!-- Add columns for name and info -->
-  
-  <div class="row">
-    <div class="col-md-3"><img src="/img/Sharon.jpg" alt="Sharon Ranels" class="headshot-thumbnail"></div>
-    <div class="col-md-9" id="div-height"><em><strong class="namefont">Sharon Ranels</strong></em>
-    Web Developer</div>
-  </div>
-
-  <hr class="line">
-
-
-<!-- CONTACT INFO -->
-
-  <div class="row">
-    
-    <div class="col-md-3"><strong>CONTACT INFORMATION</strong></div>
-    
-    <div class="col-md-4">San Antonio TX<br>
-    (832) 298-4240<br>
-    <a href="mailto:sharonranels@yahoo.com">sharonranels@yahoo.com</a><br></div>
-    
-    <div class="col-md-4"><a href="http://www.linkedin.com/in/sharonranels/" target="_blank"><img src="/img/linkedinlogo2.jpeg" alt="Linked In" class="contact-height"></a><br>
-    <a href="https://github.com/sharonranels" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="contact-height"></a></div>  
-  
+  <div>
+    <div class="col-md-3" id="div-height"><em><strong class="namefont">Sharon Ranels</strong></em><br>Web Developer</div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-md-4">San Antonio TX<br>
+        (832) 298-4240<br>
+        <a href="mailto:sharonranels@yahoo.com">sharonranels@yahoo.com</a><br></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"><a href="http://www.linkedin.com/in/sharonranels/" target="_blank"><img src="/img/linkedinlogo2.jpeg" alt="Linked In" class="contact-height"></a><br>
+        <a href="https://github.com/sharonranels" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="contact-height"></a></div>
+      </div>
+    </div>
   </div>
  
   <hr class="line">
+
 <!-- ABOUT ME -->
 
   <div class="row">
-  <div class="col-md-3"><strong>BACKGROUND AND GOALS</strong></div>
-  <div class="col-md-9"><p>I have over 20 years of experience in accounting, analysis, account management, merchandising and leadership. I am goals-driven and versatile, having succeeded in numerous industries and positions.
+    <div class="col-md-3"><strong>BACKGROUND AND GOALS</strong></div>
+    <div class="col-md-9"><p>I have over 20 years of experience in accounting, analysis, account management, merchandising and leadership. I am goals-driven and versatile, having succeeded in numerous industries and positions.
     <br><br>
-  Several times throughout my career I dealt directly with software development as both a project manager on the client side and a go-between for users and developers. This allowed me to realize the need for adept and adaptable software and programmers, which then led me to formally pursue a career in software development. 
+    Several times throughout my career I dealt directly with software development as both a project manager on the client side and a go-between for users and developers. This allowed me to realize the need for adept and adaptable software and programmers, which then led me to formally pursue a career in software development. 
     <br><br>
-  I will complete an intensive LAMP+J Software Development bootcamp at &nbsp;<a href="http://www.codeup.com/" target="_blank"><img src="/img/codeup-logo.png" alt="Codeup" class="logo"></a>&nbsp; in April and am looking forward to joining a team in which my current training and previous experience can be fully utilized.
-  </p></div>
+    I will complete an intensive LAMP+J Software Development bootcamp at &nbsp;<a href="http://www.codeup.com/" target="_blank"><img src="/img/codeup-logo.png" alt="Codeup" class="logo"></a>&nbsp; in April and am looking forward to joining a team in which my current training and previous experience can be fully utilized.</p></div>
   </div>
-
+  
   <hr class="line">
+
 
 <!-- EDUCATION -->
 
+<div class="col-sm-9 debug">
+
+
 <div class="row debug">
 
-<div class="col-sm-3 debug"><strong>EDUCATION</strong></div>
+  <div class="col-sm-3 debug"><strong>EDUCATION</strong></div>
 
-        <div class="col-sm-9 debug">
+        
 
       <!-- education 1 -->
       <div class="row">
@@ -70,7 +64,7 @@
         Texas Lutheran University<br>
         Seguin, TX</div>
         <div class="col-sm-3 logo"><strong>Graduated 1985</strong></div>
-    </div>
+      </div>
 
   </div>
 

@@ -2,9 +2,18 @@ body {
   background-image: url(/img/ricepaper2.png);
 }
 
+.navbar-font {
+  color: #FFF;
+}
+
 .container {
   margin-left: 0px
 }
+
+.navbar {
+  background-color: #0F2E0F;
+}
+
 
 .namefont {
   font-size: 30px;
@@ -17,7 +26,9 @@ body {
 }
 
 .headshot-thumbnail {
-  height: 140px;
+  height: 450px;
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 .logo {
@@ -25,7 +36,7 @@ body {
 }
 
 .line {
-  border-top: 1px solid #221F1F;
+  border-top: 1px solid #274327;
 }
 
 .contact-height {
