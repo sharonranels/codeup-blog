@@ -63,27 +63,18 @@ class PostsController extends \BaseController {
         	return Redirect::back()->withInput()->withErrors($validator);
     	
     	} else {
-			
-			// Save to db
 
+			// Save to db
 			$post = new Post();
 			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
-
 			if (Input::hasFile('image'))
 			{
-				$destinationPath = public_path() . '/uploads/';
-				$extension = Input::file('image')->getClientOriginalExtension();
-				$fileName = uniqid() . '.' . $extension;
-				Input::file('image')->move($destinationPath, $fileName);
-				$post->post_image = '/uploads/' . $fileName;
-			
+				$post->assignImage(Input::file('image'));
 			}
 			$post->save();
-
 			Session::flash('successMessage', "Post created successfully");
-			
 			return Redirect::action('PostsController@index');
 	    }
 
@@ -139,22 +130,14 @@ class PostsController extends \BaseController {
     	} else {
 			
 			// Save to db
-
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			if (Input::hasFile('image'))
 			{
-				$destinationPath = public_path() . '/uploads/';
-				$extension = Input::file('image')->getClientOriginalExtension();
-				$fileName = uniqid() . '.' . $extension;
-				Input::file('image')->move($destinationPath, $fileName);
-				$post->post_image = '/uploads/' . $fileName;
+				$post->assignImage(Input::file('image'));
 			}
-
 			$post->save();
-
 			Session::flash('successMessage', "Post was successfully changed");
-			
 			return Redirect::action('PostsController@show', $post->id);
 	    }
 	}
