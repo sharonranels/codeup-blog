@@ -22,7 +22,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$search = Input::get('search', '');
-		$posts = Post::with('user')
+		$posts = Post::select('posts.*', 'users.email')
 			->join('users', 'posts.user_id', '=', 'users.id')
 			->orderBy('posts.created_at', 'desc')
 			->where('title', 'LIKE', "%{$search}%")
@@ -75,7 +75,7 @@ class PostsController extends \BaseController {
 			{
 				$destinationPath = public_path() . '/uploads/';
 				$extension = Input::file('image')->getClientOriginalExtension();
-				$fileName = uniqid() . $extension;
+				$fileName = uniqid() . '.' . $extension;
 				Input::file('image')->move($destinationPath, $fileName);
 				$post->post_image = '/uploads/' . $fileName;
 			
@@ -142,6 +142,15 @@ class PostsController extends \BaseController {
 
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			if (Input::hasFile('image'))
+			{
+				$destinationPath = public_path() . '/uploads/';
+				$extension = Input::file('image')->getClientOriginalExtension();
+				$fileName = uniqid() . '.' . $extension;
+				Input::file('image')->move($destinationPath, $fileName);
+				$post->post_image = '/uploads/' . $fileName;
+			}
+
 			$post->save();
 
 			Session::flash('successMessage', "Post was successfully changed");

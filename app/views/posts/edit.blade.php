@@ -9,7 +9,7 @@
 
 
 <div class="blog-post">
-	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'class'=>'form-horizontal')) }}
+	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true, 'class'=>'form-horizontal')) }}
 
 	  <div class="form-group {{ $errors->has('title') ? "has-error" : '' }}">
 	    <label for="title" class="col-sm-2 control-label">Title</label>
@@ -28,7 +28,7 @@
 	  </div>
 
 	<span class="btn btn-default btn-file">
-    	Browse <input type="file">
+    	Browse <input type="file" id="image" name="image">
 	</span>
 
 	  <div class="form-group">
