@@ -12,6 +12,7 @@
 		<p>By: {{{ $post->user->email }}}</p>
 		<p>{{{ $post->body }}}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
+		<img src="{{{ $post->post_image }}}">
 	</div>
 
 	<p><a href="{{{ action( 'PostsController@index') }}}">Return to posts listing</a></p>
