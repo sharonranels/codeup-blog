@@ -47,6 +47,8 @@ Route::get('post-test', function () {
 
 });
 
+Route::get('/home', 'HomeController@showHome');
+
 Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
