@@ -16,8 +16,8 @@ class Post extends BaseModel {
     // Validation rules
 
     public static $rules = array(
-    'title'      => 'required|max:100',
-    'body'       => 'required|max:10000'
+        'title'      => 'required|max:100',
+        'body'       => 'required|max:10000'
 	);
 
 
@@ -30,14 +30,11 @@ class Post extends BaseModel {
     // Helper to assign images to posts an handle upload
     public function assignImage($inputFile)
     {
-        if (Input::hasFile('image'))
-            {
-                $destinationPath = public_path() . '/uploads/';
-                $extension = $inputFile->getClientOriginalExtension();
-                $fileName = uniqid() . '.' . $extension;
-                $inputFile->move($destinationPath, $fileName);
-                $this->attributes['post_image'] = '/uploads/' . $fileName;
-            }
+        $destinationPath = public_path() . '/uploads/';
+        $extension = $inputFile->getClientOriginalExtension();
+        $fileName = uniqid() . '.' . $extension;
+        $inputFile->move($destinationPath, $fileName);
+        $this->attributes['post_image'] = '/uploads/' . $fileName;
     }
 
 

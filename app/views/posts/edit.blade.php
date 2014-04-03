@@ -16,9 +16,9 @@
 	    <div class="col-sm-10">
 		{{ Form::text('title', null, array('class' => 'form-control', 'id' => 'title', 'placeholder' => 'Title')) }}
 		{{ $errors->has('title') ? $errors->first('title', '<p><span class="help-block">:message</span></p>') : ''}}
-	    
 	    </div>
 	  </div>
+	  
 	  <div class="form-group {{ $errors->has('title') ? "has-error" : '' }}">
 	    <label for="body" class="col-sm-2 control-label">Body</label>
 	    <div class="col-sm-10">

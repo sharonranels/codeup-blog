@@ -1,9 +1,15 @@
 body {
   background-image: url(/img/ricepaper2.png);
+  color: white
 }
 
-.navbar-font {
+.navbar-font-color {
   color: #FFF;
+}
+
+.navbar-font-size {
+  font-size: 25px;
+  font-style: italic;
 }
 
 .container {
@@ -29,6 +35,11 @@ body {
   height: 450px;
   margin-left: 25px;
   margin-top: 25px;
+  border: solid black 5px;
+  -moz-box-shadow:    3px 3px 5px 6px #999;
+  -webkit-box-shadow: 3px 3px 5px 6px #999;
+  box-shadow:         3px 3px 5px 6px #999;
+
 }
 
 .logo {
