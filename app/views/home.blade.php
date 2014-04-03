@@ -1,20 +1,10 @@
 @extends('/layouts.master')
 
-@section('content')
+@section('top-script')
+<link rel="stylesheet" href="/css/home_style_sheet.css">
+@stop
 
-<style>
-  body {
-    background-image: url(/img/flowerpic.jpg);
-    background-size: cover;
-    min-width: 960px;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-  }
-</style>
+@section('content')
 
 <!-- Add columns for name and info -->
 

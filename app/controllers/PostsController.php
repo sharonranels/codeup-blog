@@ -92,6 +92,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
+		$user_rights = false;
 		$post = Post::findOrFail($id);
 		if (Auth::guest()) {
 			$user_rights = false;

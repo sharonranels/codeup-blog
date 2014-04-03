@@ -7,13 +7,6 @@
 
 <!-- Add columns for name and info -->
 
-  <div class="row">
-      <div class="col-md-3"><img src="/img/Sharon.jpg" alt="Sharon Ranels" class="headshot-thumbnail"></div>
-      <div class="col-md-9" id="div-height"><em><strong class="namefont">Sharon Ranels</strong></em>
-      Web Developer</div>
-    </div>
-
-    <hr class="line">
 <h1 class="text-center">PORTFOLIO</h1><br>
 
 <!-- THUMBNAILS -->
