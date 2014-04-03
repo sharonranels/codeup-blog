@@ -4,7 +4,7 @@
 
 <style>
   body {
-    /*background-image: url(/img/flowerpic.jpg);*/
+    background-image: url(/img/flowerpic.jpg);
     background-size: cover;
     min-width: 960px;
     top: 0px;

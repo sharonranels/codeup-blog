@@ -33,9 +33,24 @@ App::after(function($request, $response)
 |
 */
 
+Route::filter('isAdmin', function()
+{
+	$post_id = Request::segment(2);
+	$post = Post::find($post_id);
+	if (Auth::user()->admin != "y" && $post->user_id != Auth::user()->id) {
+		Session::flash('errorMessage', "You do not have authorization to do this.");
+        // validation failed, redirect to the post create page with validation errors and old inputs
+        return Redirect::back();
+	}
+
+});
+
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::guest('login');
+	if (Auth::guest()) {
+	Session::flash('errorMessage', "Please log in.");
+	return Redirect::guest('login');
+	}
 });
 
 

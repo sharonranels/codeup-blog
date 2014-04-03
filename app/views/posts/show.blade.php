@@ -2,9 +2,11 @@
 
 @section('content')
 
+
+@if ($user_rights == true)
 <a href="#" id="btnDeletePost">Delete post</a> |
 <a href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>
-
+@endif
 
 
 	<div>

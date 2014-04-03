@@ -9,6 +9,9 @@ class PostsController extends \BaseController {
 
 		//run an auth filter before all methods except index and show
 		$this->beforeFilter('auth', ['except' => ['index', 'show']]);
+
+		//run an auth
+		$this->beforeFilter('isAdmin', array('only' => array('edit', 'update', 'destroy')));
 	}
 
 
@@ -90,7 +93,14 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post = Post::findOrFail($id);
-		return View::make('posts.show')->with('post', $post);
+		if (Auth::guest()) {
+			$user_rights = false;
+		}
+		elseif (Auth::user()->admin == "y" || $post->user_id == Auth::user()->id) {
+			$user_rights = true;
+		}
+		$array = array('post'=>$post, 'user_rights'=>$user_rights);
+		return View::make('posts.show')->with($array);
 	}
 
 	/**
