@@ -38,9 +38,9 @@ Route::filter('isAdmin', function()
 	$post_id = Request::segment(2);
 	$post = Post::find($post_id);
 	if (Auth::user()->admin != "y" && $post->user_id != Auth::user()->id) {
-		Session::flash('errorMessage', "You do not have authorization to do this.");
+		Session::flash('errorMessage', "You do not have authorization to change someone else's post.");
         // validation failed, redirect to the post create page with validation errors and old inputs
-        return Redirect::back();
+        return Redirect::action('PostsController@index');
 	}
 
 });
