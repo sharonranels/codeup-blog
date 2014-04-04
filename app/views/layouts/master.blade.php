@@ -41,7 +41,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand navbar-font-color navbar-font-size"><strong>Sharon Ranels</strong>, Web Developer</a>
+        <div class="navbar-brand navbar-font-color navbar-font-size"><strong>Sharon Ranels</strong>, <span id="title-font">Web Developer</span></div>
       </div>
         <ul class="nav navbar-nav navbar-right">
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showHome') }}}">Home</a></li>

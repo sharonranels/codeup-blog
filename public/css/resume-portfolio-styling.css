@@ -2,14 +2,17 @@ body {
   background-image: url(/img/ricepaper2.png);
 }
 
-.home {
-  color: white;
+.navbar {
+  background-image: url(/img/flowerpicnavbar.jpg);
 }
 
-.home-contact {
-  font-size: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
+#title-font {
+    font-size: 20px;
+    color: #999;
+}
+
+.home {
+  color: white;
 }
 
 .navbar-font-color {
