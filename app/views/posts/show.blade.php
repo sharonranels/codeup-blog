@@ -11,7 +11,7 @@
 
 	<div>
 		<h2>{{{ $post->title }}}</h2>
-		<p>By: {{{ $post->user->email }}}</p>
+		<p>By: {{{ ucfirst($post->user->first_name) . " " . ucfirst(substr($post->user->last_name, 0, 1)) . "."}}}</p>
 		<p>{{{ $post->body }}}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
 		<img src="{{{ $post->post_image }}}">
