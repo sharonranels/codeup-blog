@@ -20,6 +20,8 @@
 
 Route::get('/', 'HomeController@showResume');
 
+Route::resource('createuser', 'UserController');
+
 Route::get('/login', 'HomeController@showLogin');
 Route::post('/login', 'HomeController@doLogin');
 

@@ -13,9 +13,9 @@
 	    {{ Form::label('password', 'Password') }}
 		{{ Form::password('password', array('class' => 'form-control')) }}
 
-		{{ Form::label('remember', 'Remember Me') }}
+		<!-- {{ Form::label('remember', 'Remember Me') }}
 		{{ Form::checkbox('remember', 'remember-me', true); }}
-
+ -->
 		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block'))}}
 
 	{{ Form::close() }}
