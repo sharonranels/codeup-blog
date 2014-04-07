@@ -48,7 +48,6 @@
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
           <li><a class="navbar-font-color" href="{{{ action('PostsController@index') }}}">Blog</a></li>
-          <li><a class="navbar-font-color" href="{{{ action('UserController@createUser') }}}">Register</a></li>
           @if (Auth::check())
             <li><a class="navbar-font-color" href="{{{ action('HomeController@logout') }}}">Logout ({{{ Auth::user()->email }}})</a></li>
           @else
