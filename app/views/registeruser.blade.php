@@ -1,4 +1,4 @@
-@extends('layouts.master')
+<!-- @extends('layouts.master')
 
 @section('content')
 
@@ -17,15 +17,15 @@
 		{{ Form::text('first_name', array('class' => 'form-control')) }}
 
 		{{ Form::label('last_name', 'Last Name') }}
-		{{ Form::text('last_name', array('class' => 'form-control')) }}
+		{{ Form::text('last_name', array('class' => 'form-control')) }} -->
 
 		<!-- {{ Form::label('remember', 'Remember Me') }}
 		{{ Form::checkbox('remember', 'remember-me', true); }}
  -->
-		{{ Form::submit('Create new account', array('class' => 'btn btn-lg btn-primary btn-block'))}}
+		<!-- {{ Form::submit('Create new account', array('class' => 'btn btn-lg btn-primary btn-block'))}}
 
 	{{ Form::close() }}
 
-@stop
+@stop -->
 
 
