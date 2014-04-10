@@ -1,47 +1,51 @@
 @extends('layouts.master')
 
+@section('top-script')
+<link rel="stylesheet" href="/css/home_style_sheet.css">
+@stop
+
 @section('content')
 
 <div class="blog-header">
-	<h1 class="blog-title">Add a new blog</h1>
-	<p class="lead blog-description"><em><strong>The Blog site of Sharon Ranels</em></strong></p>
+	<h1 class="blog-title">Sharon Ranels</h1>
+	<span class="lead blog-description"><em><strong>Add a new Blog</em></strong></p>
 </div>
 
+<p><a href="{{{ action( 'PostsController@index') }}}"><em>Click here to return to list of all posts<em></a></p>
 
 <div class="blog-post">
 	{{ Form::open(array('action' => 'PostsController@store', "class"=>"form-horizontal", 'files' => true)) }}
 
  	<div class="form-group {{ $errors->has('title') ? "has-error" : '' }}">
-    	<label for="title" class="col-sm-2 control-label">Title</label>
-	   	<div class="col-sm-10">
-			{{ Form::text('title', null, array('class' => 'form-control', 'id' => 'title', 'placeholder' => 'Title')) }}
+	   	<div class="col-sm-4">
+			{{ Form::text('title', null, array('class' => 'form-control blog-font', 'id' => 'title', 'placeholder' => 'Enter Blog Title Here')) }}
 			{{ $errors->has('title') ? $errors->first('title', '<p><span class="help-block">:message</span></p>') : ''}}
 	    </div>
   	</div>
   
   	<div class="form-group {{ $errors->has('body') ? "has-error" : '' }}">
-    	<label for="body" class="col-sm-2 control-label">Body</label>
-	    <div class="col-sm-10">
-	    {{Form::textarea('body', null, array('class' => 'form-control')) }}
+	    <div class="col-sm-7">
+	    {{Form::textarea('body', null, array('class' => 'form-control blog-font', 'placeholder' => 'Enter Blog Content Here')) }}
 		{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : ''}}
 	    </div>
 	</div>
-	
-	<div class="btn btn-default btn-file">
-		<div input type="file">Browse</div>
+
+	<div class="btn btn-default btn-file bottom-margin">
+		<div input type="file"><strong>Click to upload a file</strong></div>
 		{{Form::file('image')}}
 	</div>
 
-	  <div class="form-group">
-	    <div class="col-sm-offset-2 col-sm-10">
+	<div class="form-group submit-format">
+	    <div class="col-sm-2 col-sm-10">
 	      <button type="submit" class="btn btn-default">Create Post</button>
 	    </div>
-	  </div>
+	</div>
+	
 	{{ Form::close() }}
+
 </div>
 
 
-<p><a href="{{{ action( 'PostsController@index') }}}">View all posts</a></p>
 
 
 @stop
