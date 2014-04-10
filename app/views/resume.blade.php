@@ -42,47 +42,30 @@
   <hr class="line">
 
 
-<!-- EDUCATION -->
+  <!-- EDUCATION -->
 
   <div class="row debug">
-
     <div class="col-sm-3"><strong>EDUCATION</strong></div>
-    
-
-    <div class="col-sm-9 debug">
-
-
-    <div class="row debug">
-
-
-            
-
+      <div class="col-sm-9 debug">
+        <div class="row debug">
+          
           <!-- education 1 -->
-          <div class="row">
-            <div class="col-sm-9 debug"><strong>LAMP+J Software Development Bootcamp</strong><br>
+            <div class="col-sm-6 debug"><strong>LAMP+J Software Development Bootcamp</strong><br>
               <a href="http://www.codeup.com/" target="_blank"><img src="/img/codeup-logo.png" alt="Codeup" class="logo"></a><br>
-              San Antonio, TX
+              San Antonio, TX<br>
+              <strong>Graduating April 2014</strong>
+              <span class="label label-success">IN PROGRESS</span>
             </div>
-
-            <div class="col-sm-3 logo"><strong>Graduating April 2014</strong>
-              <div class="label label-success">IN PROGRESS</div>
-            </div>
-
-          </div>
 
           <!-- education 2 -->
-          <div class="row">
-            <div class="col-sm-9 debug"><strong>BA in Business Administration (Accounting)</strong><br>
+            <div class="col-sm-6 debug"><strong>BA in Business Administration (Accounting)</strong><br>
             Texas Lutheran University<br>
-            Seguin, TX</div>
-            <div class="col-sm-3 logo"><strong>Graduated 1985</strong></div>
-          </div>
-
-      </div>
-
+            Seguin, TX<br>
+            <strong>Graduated 1985</strong>
+            </div>
+        </div>
     </div>
-
-</div>
+  </div>
 
 
 <hr class="line">
