@@ -23,6 +23,11 @@
 	    <label for="body" class="col-sm-2 control-label">Body</label>
 	    <div class="col-sm-10">
 	    {{Form::textarea('body', null, array('class' => 'form-control')) }}
+		<script>
+	        // Replace the <textarea id="editor1"> with a CKEditor
+	        // instance, using default configuration.
+	        CKEDITOR.replace( 'body' );
+         </script>
 		{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : ''}}
 	    </div>
 	  </div>

@@ -31,7 +31,7 @@
 	<div>
 		<h2><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
 		<p>By: {{{ ucfirst($post->user->first_name) . " " . ucfirst(substr($post->user->last_name, 0, 1)) . "."}}}</p>
-		<p>{{{ Str::words($post->body, 40) }}}</p>
+		<p>{{ Str::words($post->body, 40) }}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
 		<img class="blog-image" src="{{{ $post->post_image }}}">
 		<hr class="line">

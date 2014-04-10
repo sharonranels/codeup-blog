@@ -15,6 +15,12 @@ a {
     color: #ffffff;
 }
 
+.show-border {
+  background-image: url(/img/ricepaper2.png);
+  border: solid #999 3px; 
+  color: black;
+}
+
 .home-contact {
   font-size: 20px;
   margin-top: 20px;
@@ -43,4 +49,8 @@ a {
 
 .bottom-margin {
 	margin-bottom: 15px;
+}
+
+.submit-btn {
+  text-align: center;
 }
