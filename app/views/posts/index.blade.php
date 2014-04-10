@@ -1,10 +1,14 @@
 @extends('layouts.master')
 
+@section('top-script')
+<link rel="stylesheet" href="/css/home_style_sheet.css">
+@stop
+
 @section('content')
 
 <div class="blog-header">
-	<h1 class="blog-title">List of all blogs</h1>
-	<p class="lead blog-description"><em><strong>The Blog site of Sharon Ranels</em></strong></p>
+	<h1 class="blog-title">Sharon Ranels</h1>
+	<p class="lead blog-description"><em><strong>Welcome to my Blog!</em></strong></p>
 </div>
 
 <hr class="line">
@@ -29,7 +33,7 @@
 		<p>By: {{{ ucfirst($post->user->first_name) . " " . ucfirst(substr($post->user->last_name, 0, 1)) . "."}}}</p>
 		<p>{{{ Str::words($post->body, 40) }}}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
-		<img src="{{{ $post->post_image }}}">
+		<img class="blog-image" src="{{{ $post->post_image }}}">
 		<hr class="line">
 	</div>
 

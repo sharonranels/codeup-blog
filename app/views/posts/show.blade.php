@@ -2,6 +2,7 @@
 
 @section('content')
 
+<p><a href="{{{ action( 'PostsController@index') }}}">Return to posts listing</a></p>
 
 @if ($user_rights == true)
 <a href="#" id="btnDeletePost">Delete post</a> |
@@ -17,7 +18,6 @@
 		<img src="{{{ $post->post_image }}}">
 	</div>
 
-	<p><a href="{{{ action( 'PostsController@index') }}}">Return to posts listing</a></p>
 
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
 	{{ Form::close() }}

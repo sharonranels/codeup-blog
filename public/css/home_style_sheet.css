@@ -8,6 +8,7 @@ position: absolute;
 height: 100%;
 width: 100%;
 margin: 0px;
+color: white;
 }
 
 a {
@@ -30,4 +31,16 @@ a {
 #hover-format a {
     text-decoration: none;
     color: #FFF;
+}
+
+.blog-format {
+	margin-left: 25px;
+}
+
+.btn {
+	text-align: left;
+}
+
+.bottom-margin {
+	margin-bottom: 15px;
 }

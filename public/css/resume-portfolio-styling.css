@@ -6,6 +6,10 @@ body {
   background-image: url(/img/flowerpicnavbar.jpg);
 }
 
+.blog-image {
+  height: 100px;
+}
+
 .bottompad span {
   margin-bottom: 8px;
   float: left;
@@ -91,4 +95,12 @@ body {
   font-style: italic;
   color: red;
   font-weight: bold;
+}
+
+.blog-font {
+  font-size: 20px;
+}
+
+.submit-format {
+  padding-left: 0px;
 }
