@@ -25,7 +25,12 @@
   
   	<div class="form-group {{ $errors->has('body') ? "has-error" : '' }}">
 	    <div class="col-sm-8">
-	    {{Form::textarea('body', null, array('class' => 'form-control blog-font', 'placeholder' => 'Enter Blog Content Here')) }}
+	    {{Form::textarea('body', null, array('id' => 'body', 'class' => 'form-control blog-font', 'placeholder' => 'Enter Blog Content Here')) }}
+		<script>
+	        // Replace the <textarea id="editor1"> with a CKEditor
+	        // instance, using default configuration.
+	        CKEDITOR.replace( 'body' );
+         </script>
 		{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : ''}}
 	    </div>
 	</div>

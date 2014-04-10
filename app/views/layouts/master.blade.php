@@ -17,6 +17,8 @@
 
      <link href="/css/signin.css" rel="stylesheet">
 
+    <script src="http://blog.dev/js/ckeditor/ckeditor.js"></script>
+
 @yield('top-script')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

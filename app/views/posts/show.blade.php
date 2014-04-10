@@ -1,21 +1,25 @@
 @extends('layouts.master')
 
+@section('top-script')
+<link rel="stylesheet" href="/css/home_style_sheet.css">
+@stop
+
 @section('content')
 
 <p><a href="{{{ action( 'PostsController@index') }}}">Return to posts listing</a></p>
 
 @if ($user_rights == true)
-<a href="#" id="btnDeletePost">Delete post</a> |
+<a href="#" id="btnDeletePost" class="bottom-margin">Delete post</a> |
 <a href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>
 @endif
 
 
-	<div>
+	<div class="show-border">
 		<h2>{{{ $post->title }}}</h2>
 		<p>By: {{{ ucfirst($post->user->first_name) . " " . ucfirst(substr($post->user->last_name, 0, 1)) . "."}}}</p>
-		<p>{{{ $post->body }}}</p>
+		<p>{{ $post->body }}</p>
 		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
-		<img src="{{{ $post->post_image }}}">
+		<img class="blog-image" src="{{{ $post->post_image }}}">
 	</div>
 
 

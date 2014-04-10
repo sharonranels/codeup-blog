@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('top-script')
+<link rel="stylesheet" href="/css/home_style_sheet.css">
+@stop
+
 @section('content')
 
 
@@ -16,7 +20,7 @@
 		<!-- {{ Form::label('remember', 'Remember Me') }}
 		{{ Form::checkbox('remember', 'remember-me', true); }}
  -->
-		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block'))}}
+		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block submit-btn'))}}
 
 	{{ Form::close() }}
 
