@@ -1,3 +1,5 @@
+db1:
+  type: mysql
 web1:
   document_root: public
   php_version: 5.4.14
@@ -27,5 +29,3 @@ web1:
     - "php artisan migrate --env=production"
 cache1:
   type: redis
-db1:
-  type: mysql
