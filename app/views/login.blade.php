@@ -22,6 +22,8 @@
  -->
 		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block submit-btn'))}}
 
+		<a class="btn btn-lg btn-primary btn-block">Cancel
+
 	{{ Form::close() }}
 
 @stop
