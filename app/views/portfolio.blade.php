@@ -2,12 +2,15 @@
 
 @section('content')
 
+<div class="blog-header">
+  <h1 class="blog-title">Sharon Ranels</h1>
+  <p class="lead blog-description"><em><strong>Portfolio</em></strong></p>
+</div>
 
-
+<hr class="line">
 
 <!-- Add columns for name and info -->
 
-<h1 class="text-center">PORTFOLIO</h1><br>
 
 <!-- THUMBNAILS -->
     <div class="row">
