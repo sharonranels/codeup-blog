@@ -8,9 +8,31 @@
 </div>
 
 <hr class="line">
+  
+<!-- Add columns for capstone info -->
 
-<!-- Add columns for name and info -->
+<div class="row item_box">
+  <div class="col-sm-6"><img ALIGN="Left" src="/img/Iwantit.png" alt="Capstone Image" class="capstone-image">
+  <p><a href="https://github.com/sharonranels/codeup-blog" class="btn btn-default" align="left" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p></div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-md-12">
+          <h3><u>I Want It!</u></h3>
+            <p><strong>I Want It</strong> is an application that helps the user to budget and save for a special purchase, whether it be large or small, financed or paid in cash.</p><br>
+            <p>The program has the following features:</p>
+              <ul class="port-details">
+                <li>Create a new user, login and logout</li>
+                <li>Admin versus user rights</li>
+                <li>User data change, including password change via email notification</li>
+                <li>Error banner if the data does not meet standard requirements</li>
+                <li>Database interaction, including user ability to add new column headings and update financial information</li>
+              </ul>
+        </div>
+      </div>
+    </div>  
+</div>
 
+  <hr class="line">
 
 <!-- THUMBNAILS -->
     <div class="row">

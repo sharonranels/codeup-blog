@@ -6,6 +6,14 @@ body {
   background-image: url(/img/flowerpicnavbar.jpg);
 }
 
+.item_box {
+  background-color: white;
+}
+
+.capstone-image {
+  height: 275px;
+}
+
 .blog-image {
   height: 100px;
 }

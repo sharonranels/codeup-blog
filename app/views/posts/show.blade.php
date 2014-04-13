@@ -6,7 +6,7 @@
 
 @section('content')
 
-<p><a href="{{{ action( 'PostsController@index') }}}">Return to posts listing</a></p>
+<button type="submit" class="btn bottom-margin"><a href="{{{ action( 'PostsController@index') }}}" class="blk-font">Return to Posts Listing</button>
 
 @if ($user_rights == true)
 <a href="#" id="btnDeletePost" class="bottom-margin">Delete post</a> |

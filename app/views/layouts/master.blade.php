@@ -50,11 +50,11 @@
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
           <li><a class="navbar-font-color" href="{{{ action('PostsController@index') }}}">Blog</a></li>
-          @if (Auth::check())
+          <!-- @if (Auth::check())
             <li><a class="navbar-font-color" href="{{{ action('HomeController@logout') }}}">Logout ({{{ Auth::user()->email }}})</a></li>
           @else
             <li><a class="navbar-font-color" href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
-          @endif
+          @endif -->
 
         </ul>
       </div><!-- /.navbar-collapse -->
