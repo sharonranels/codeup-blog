@@ -10,34 +10,35 @@
 	<h1 class="blog-title">Sharon Ranels</h1>
 	<p class="lead blog-description"><em><strong>Welcome to my Blog!</em></strong></p>
 </div>
-
-<hr class="line">
-
-<p><a href="{{{ action( 'PostsController@create') }}}">Create new blog</a></p>
-
-<hr class="line">
     
 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
     <div class="input-prepend">
-        <button type="submit" class="btn">Search for key word(s) or name(s):</button>
-        <input type="text" class="span2 search-query" name="search">
-
+		<button type="submit" class="btn"><a href="{{{ action( 'PostsController@create') }}}" class="blk-font">Create new blog</button><br>
+        <button type="submit" class="btn">Search for key word(s):</button>
+        <input type="text" class="top-pad bottom-margin span2 search-query" name="search">
     </div>
 {{ Form::close()}}
 
-<hr class="line">
+<p class="white-font" color:"white"><em>Click a blog title to see more details</em></p>
 
-@foreach ($posts as $post)
-	<div>
-		<h2><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
-		<p>By: {{{ ucfirst($post->user->first_name) . " " . ucfirst(substr($post->user->last_name, 0, 1)) . "."}}}</p>
-		<p>{{ Str::words($post->body, 40) }}</p>
-		<p>{{{ $post->created_at->format('l, F jS Y @ h:i:s A') }}}</p>
-		<img class="blog-image" src="{{{ $post->post_image }}}">
-		<hr class="line">
-	</div>
+<table class="table show-border">
+	<tr>
+		<th>Title</th>
+		<th>Date</th>
+		<th>Blog</th>
+		<th>Image</th>
+	</tr>
+	@foreach ($posts as $post)
+		<tr>
+			<td id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></td>
+			<td>{{{ $post->created_at->format('l, F jS Y') }}}</td>
+			<td>{{ Str::words($post->body, 30) }}</td>
+			<td><img class="blog-image" src="{{{ $post->post_image }}}"></td>
+		</tr>
+	@endforeach
+</table>
 
-@endforeach
+
 
 {{ $posts->appends(array('search' => Input::get('search')))->links() }}
 

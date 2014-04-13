@@ -22,10 +22,8 @@
  -->
 		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block submit-btn'))}}
 
-		<a class="btn btn-lg btn-primary btn-block">Cancel
+		<button type="submit" class="btn top-pad"><a href="{{{ action('PostsController@index') }}}"class"blk-font">Cancel</button></p>
 
 	{{ Form::close() }}
 
 @stop
-
-

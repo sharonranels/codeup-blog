@@ -24,6 +24,7 @@ a {
 .home-contact {
   font-size: 20px;
   margin-top: 20px;
+  margin-left: -20px;
 }
 
 .home-contact div {
@@ -39,8 +40,9 @@ a {
     color: #FFF;
 }
 
-.blog-format {
-	margin-left: 25px;
+#hover-color a {
+  /*text-decoration: none;*/
+  color: black;
 }
 
 .btn {
@@ -51,6 +53,22 @@ a {
 	margin-bottom: 15px;
 }
 
+.top-pad {
+  margin-top: 15px;
+}
+
+.blk-font {
+  color: black;
+}
+
+.white-font {
+  color: white;
+}
+
 .submit-btn {
   text-align: center;
+}
+
+.element-style {
+  width: 800px;
 }
