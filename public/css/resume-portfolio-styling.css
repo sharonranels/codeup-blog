@@ -22,6 +22,11 @@ body {
   width: 100%;
 }
 
+.blog-description {
+  font-size: 30px;
+  color: #999;
+}
+
 #title-font {
     font-size: 20px;
     color: #999;
@@ -63,6 +68,7 @@ body {
   -webkit-box-shadow: 3px 3px 5px 6px #999;
   box-shadow:         3px 3px 5px 6px #999;
   clear: left;
+  margin-left: -15px;
 
 }
 
