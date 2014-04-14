@@ -30,11 +30,8 @@
        <div class="col-sm-9 debug">
         <div class="row">
           <div class="col-md-12">
-            <p>I have over 20 years of experience in accounting, analysis, account management, merchandising and leadership. I am goals-driven and versatile, having succeeded in numerous industries and positions.
-              <br><br>
-            Several times throughout my career I dealt directly with software development as both a project manager on the client side and a go-between for users and developers. This allowed me to realize the need for adept and adaptable software and programmers, which then led me to formally pursue a career in software development. 
-              <br><br>
-            I will complete an intensive LAMP+J Software Development bootcamp at &nbsp;<a href="http://www.codeup.com/" target="_blank"><img src="/img/codeup-logo.png" alt="Codeup" class="logo"></a>&nbsp; in April and am looking forward to joining a team in which my current training and previous experience can be fully utilized.</p></div>
+            <p>I am a full stack web developer with experience in Laravel, PHP, JavaScript, HTML, CSS and MySQL.<br><br>
+            Before becoming a web developer, I was a mediator between users and programs several times throughout my career. In this role, I insured the programmers understood the user needs as well as insured the users had a clear focus and knew how to implement the software. I held this unique role in several industries, and this background allows a smoother integration between development an implementation.</p></div>
         </div>
       </div>
     </div>
