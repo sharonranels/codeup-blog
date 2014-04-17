@@ -55,19 +55,19 @@ App::error(function(Exception $exception, $code)
 	else
 	{
 		Log::error($exception->getMessage());
-		return Response::view('errors.500', array(), 500);
+		return Response::view('errors.missing', array(), 500);
 	}
 
 });
 
 App::error(function(ModelNotFoundException $e)
 {
-    return Response::view('errors.404', array(), 404);
+    return Response::view('errors.missing', array(), 404);
 });
 
 App::missing(function($exception)
 {
-    return Response::view('errors.404', array(), 404);
+    return Response::view('errors.missing', array(), 404);
 });
 
 
