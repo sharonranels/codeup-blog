@@ -31,7 +31,7 @@
 	@foreach ($posts as $post)
 		<tr>
 			<td id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></td>
-			<td>{{{ $post->created_at->format('l, F jS Y') }}}</td>
+			<td>{{{ $post->created_at->format('n/j/y') }}}</td>
 			<td>{{ Str::words($post->body, 30) }}</td>
 			<td><img class="blog-image" src="{{{ $post->post_image }}}"></td>
 		</tr>
