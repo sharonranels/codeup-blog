@@ -28,6 +28,13 @@ return array(
 
 	'default' => 'mysql',
 
+	// Determine if DB is local or remote
+
+	'host'     => $_ENV['DB_HOST'],
+			'database' => $_ENV['DB_NAME'],
+			'username' => $_ENV['DB_USER'],
+			'password' => $_ENV['DB_PASS'],
+
 	/*
 	|--------------------------------------------------------------------------
 	| Database Connections
