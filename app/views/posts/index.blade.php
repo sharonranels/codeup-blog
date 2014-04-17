@@ -13,8 +13,8 @@
     
 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
     <div class="input-prepend">
-		<button type="submit" class="btn"><a href="{{{ action( 'PostsController@create') }}}" class="blk-font">Create new blog</button><br>
-        <button type="submit" class="btn">Search for key word(s):</button>
+		<button type="submit" class="btn"><a href="{{{ action( 'PostsController@create') }}}" class="blk-font">Create new blog</a></button><br>
+        <button type="submit" class="btn search-text">Search for key word(s):</button>
         <input type="text" class="top-pad bottom-margin span2 search-query" name="search">
     </div>
 {{ Form::close()}}
