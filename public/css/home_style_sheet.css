@@ -40,7 +40,7 @@ a {
     color: #FFF;
 }
 
-#hover-color a {
+#hover-color a, .search-text {
   /*text-decoration: none;*/
   color: black;
 }

@@ -31,7 +31,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>I am a full stack web developer with experience in Laravel, PHP, JavaScript, HTML, CSS and MySQL.<br><br>
-            Before becoming a web developer, I was a mediator between users and programs several times throughout my career. In this role, I insured the programmers understood the user needs as well as insured the users had a clear focus and knew how to implement the software. I held this unique role in several industries, and this background allows a smoother integration between development an implementation.</p></div>
+            Before becoming a web developer, I was a mediator between users and programs several times throughout my career. In this role, I insured the programmers understood the user needs as well as insured the users had a clear focus and knew how to implement the software. I held this unique role in several industries, and this background allows a smoother integration between development and implementation.</p></div>
         </div>
       </div>
     </div>
