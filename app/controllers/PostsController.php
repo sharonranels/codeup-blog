@@ -24,6 +24,9 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
+		return 'test this route';
+		exit();
+
 		$search = Input::get('search', '');
 		$posts = Post::select('posts.*', 'users.email')
 			->join('users', 'posts.user_id', '=', 'users.id')
