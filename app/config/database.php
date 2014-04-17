@@ -52,25 +52,15 @@ return array(
 			'prefix'   => '',
 		),
 
-		// 'mysql' => array(
-		// 	'driver'    => 'mysql',
-		// 	'host'      => 'localhost',
-		// 	'database'  => 'blog_db',
-		// 	'username'  => 'codeup',
-		// 	'password'  => 'codeup',
-		// 	'charset'   => 'utf8',
-		// 	'collation' => 'utf8_unicode_ci',
-		// 	'prefix'    => '',
-
 		'mysql' => array(
-		    'driver'    => 'mysql',
-		    'host'      => isset($_SERVER['DB1_HOST']) ? $_SERVER['DB1_HOST'] : 'localhost',
-		    'database'  => isset($_SERVER['DB1_NAME']) ? $_SERVER['DB1_NAME'] : 'blog_db',
-		    'username'  => isset($_SERVER['DB1_USER']) ? $_SERVER['DB1_USER'] : 'codeup',
-		    'password'  => isset($_SERVER['DB1_PASS']) ? $_SERVER['DB1_PASS'] : 'password',
-		    'charset'   => 'utf8',
-		    'collation' => 'utf8_unicode_ci',
-		    'prefix'    => '',
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'blog_db',
+			'username'  => 'sharonranels',
+			'password'  => 'Dumas060863',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
 		),
 
 		'pgsql' => array(
