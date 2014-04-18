@@ -13,13 +13,13 @@
     
 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
     <div class="input-prepend">
-		<button type="submit" class="btn"><a href="{{{ action( 'PostsController@create') }}}" class="blk-font">Create new blog</a></button><br>
+		<button type="submit" class="btn"><a href="{{{ action( 'PostsController@create') }}}" class="blk-font">Create new blog</a></button> OR 
         <button type="submit" class="btn search-text">Search for key word(s):</button>
         <input type="text" class="top-pad bottom-margin span2 search-query" name="search">
     </div>
 {{ Form::close()}}
 
-<p class="white-font" color:"white"><em>Click a blog title to see more details</em></p>
+<h4 class="white-font top-pad" color:"white">Click a blog title to see more details</h4>
 
 <table class="table show-border">
 	<tr>
@@ -30,7 +30,7 @@
 	</tr>
 	@foreach ($posts as $post)
 		<tr>
-			<td id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></td>
+			<td id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}"><strong>{{{ $post->title }}}</strong></a></td>
 			<td>{{{ $post->created_at->format('n/j/y') }}}</td>
 			<td>{{ Str::words($post->body, 30) }}</td>
 			<td><img class="blog-image" src="{{{ $post->post_image }}}"></td>
