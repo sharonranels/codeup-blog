@@ -13,7 +13,7 @@
 
 <div class="row item_box">
   <div class="col-sm-6"><img ALIGN="Left" src="/img/Iwantit.png" alt="Capstone Image" class="capstone-image">
-  <p><a href="https://github.com/sharonranels/codeup-blog" class="btn btn-default" align="left" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p></div>
+  <p><a href="https://github.com/blind-squirrel/blind-squirrel/tree/Sharon" class="btn btn-default" align="left" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p></div>
     <div class="col-sm-6">
       <div class="row">
         <div class="col-md-12">
@@ -37,7 +37,25 @@
 <!-- THUMBNAILS -->
     <div class="row">
       
-      <!-- Portfolio Entry #1 -->
+      Portfolio Entry #1
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail item_box">
+          <img src="/img/blog-screenshot.png" alt="Address Book" class="screenshot-thumbnail">
+          <div class="caption">
+            <h3 class="text-center"><u>Blog</u></h3>
+            <p></p>
+            <ul class="port-details">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <p></p>
+            <p><a href="https://github.com/sharonranels/codeup-blog" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
+          </div>
+        </div>
+      </div> <!-- End Portfolio Entry #1 -->
+
+      <!-- Portfolio Entry #2 -->
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail item_box">
           <img src="/img/NationalParks.png" alt="National Parks" class="screenshot-thumbnail">
@@ -54,9 +72,9 @@
             <p><a href="https://github.com/sharonranels/codeup.dev/blob/master/public/national-parks.php" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
           </div>
         </div>
-      </div>  <!-- End Portfolio Entry #1 -->
+      </div>  <!-- End Portfolio Entry #2 -->
       
-      <!-- Portfolio Entry #2 -->
+      <!-- Portfolio Entry #3 -->
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail item_box">
           <img src="/img/whackscreen.png" alt="Whack-A-Mole screenshot" class="screenshot-thumbnail">
@@ -71,25 +89,9 @@
             <p><a href="https://github.com/sharonranels/codeup.dev/blob/master/public/Whack.html" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
           </div>
         </div>
-      </div>  <!-- End Portfolio Entry #2 -->
+      </div>  <!-- End Portfolio Entry #3 -->
       
-      <!-- Portfolio Entry #3
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail item_box">
-          <img src="/img/ABS.png" alt="Address Book" class="screenshot-thumbnail">
-          <div class="caption">
-            <h3 class="text-center"><u>Address Book</u></h3>
-            <p>This Address Book allows the user to:</p>
-            <ul class="port-details">
-              <li>Add new individual items to the list</li>
-              <li>Upload a new file that will either add items onto the existing file or overwrite all exiting information</li>
-              <li>Remove individual items from the list</li>
-            </ul>
-            <p>The user will also be notified and asked to retry if the item entry is too long or too short.</p>
-            <p><a href="https://github.com/sharonranels/codeup.dev/blob/fa924a6d625fed85a91f62ac7a5ec5c20086cd8e/public/address_book.php" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
-          </div>
-        </div>
-      </div> --> <!-- End Portfolio Entry #3 -->
+      
 
     </div>
 
