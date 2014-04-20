@@ -12,17 +12,17 @@
 	    <h2 class="form-signin-heading">Please sign in</h2>
 
 		{{ Form::label('email', 'Email Address') }}
-		{{ Form::text('email', null, array('class' => 'form-control')) }}
+		{{ Form::text('email', null, array('class' => 'form-control bottom-margin')) }}
 	    
 	    {{ Form::label('password', 'Password') }}
-		{{ Form::password('password', array('class' => 'form-control')) }}
+		{{ Form::password('password', array('class' => 'form-control bottom-margin')) }}
 
-		<!-- {{ Form::label('remember', 'Remember Me') }}
-		{{ Form::checkbox('remember', 'remember-me', true); }}
- -->
-		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block submit-btn'))}}
+		{{ Form::label('remember', 'Remember Me') }}
+		{{ Form::checkbox('remember', 'remember-me', true ); }}
 
-		<button type="submit" class="btn top-pad"><a href="{{{ action('PostsController@index') }}}"class"blk-font">Cancel</button></p>
+		{{ Form::submit('Sign in', array('class' => 'btn btn-lg btn-primary btn-block submit-btn bottom-margin top-pad submit-color'))}}
+
+		<button type="submit" class="btn top-pad submit-color"><a href="{{{ action('PostsController@index') }}}"class"blk-font">Cancel</button></p>
 
 	{{ Form::close() }}
 
