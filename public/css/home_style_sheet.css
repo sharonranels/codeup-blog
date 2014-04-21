@@ -76,3 +76,7 @@ a {
   background-color: #ccc;
   border: none;
 }
+
+.width {
+  width: 500px;
+}

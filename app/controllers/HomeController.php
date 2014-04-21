@@ -48,6 +48,7 @@ class HomeController extends BaseController {
 		}
 		else
 		{
+		    Session::flash('errorMessage', "You must enter a valid Username and Password.");
 		    // login failed, go back to the login screen
 		    return Redirect::back()->withInput();
 		}

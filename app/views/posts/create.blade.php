@@ -18,7 +18,7 @@
 
  	<div class="form-group {{ $errors->has('title') ? "has-error" : '' }}">
 	   	<div class="col-sm-4">
-			{{ Form::text('title', null, array('class' => 'form-control blog-font', 'id' => 'title', 'placeholder' => 'Enter Blog Title Here')) }}
+			{{ Form::text('title', null, array('class' => 'form-control blog-font', 'placeholder' => 'Enter Blog Title Here')) }}
 			{{ $errors->has('title') ? $errors->first('title', '<p><span class="help-block">:message</span></p>') : ''}}
 	    </div>
   	</div>

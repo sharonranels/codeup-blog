@@ -34,31 +34,40 @@
   <body>
 
     <nav class="navbar" role="navigation">
-    <div class="container-fluid navbar-font">
+      <div class="container-fluid navbar-font">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-brand navbar-font-color navbar-font-size"><strong>Sharon Ranels</strong>, <span id="title-font">Web Developer</span></div>
-      </div>
+        <div class="navbar-header">
+          <div class="navbar-brand navbar-font-color navbar-font-size"><strong>Sharon Ranels</strong>, <span id="title-font">Web Developer</span></div>
+        </div>
+        
         <ul class="nav navbar-nav navbar-right">
+          
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showHome') }}}">Home</a></li>
+
+          @if (Auth::check())
+            @if(Auth::user()->admin == 'y')
+              <li><a class="navbar-font-color" href="{{{ action('HomeController@showHome') }}}">Admin</a></li>
+            @endif
+          @endif
+
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
+          
           <li><a class="navbar-font-color" href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
+          
           <li><a class="navbar-font-color" href="{{{ action('PostsController@index') }}}">Blog</a></li>
+          
           @if (Auth::check())
             <li><a class="navbar-font-color" href="{{{ action('HomeController@logout') }}}">Logout ({{{ Auth::user()->email }}})</a></li>
           @else
+            <li><a class="navbar-font-color" href="{{{ action('UserController@create') }}}">Register</a></li>
+
             <li><a class="navbar-font-color" href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
           @endif
 
         </ul>
+
       </div><!-- /.navbar-collapse -->
-  </nav>
+    </nav>
  
 <div class="container">
 
