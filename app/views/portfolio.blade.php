@@ -21,6 +21,7 @@
             <p><strong>I Want It</strong> is an application that helps the user to budget and save for a special purchase, whether it be large or small, financed or paid in cash.</p><br>
             <p>The program has the following features:</p>
               <ul class="port-details">
+                <li>Built using JQuery, Laravel, JavaScript, CSS and MySQL</li>
                 <li>Create a new user, login and logout</li>
                 <li>Admin versus user rights</li>
                 <li>User data change, including password change via email notification</li>

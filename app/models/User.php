@@ -35,6 +35,17 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 		return $this->getKey();
 	}
 
+	// Set user rules
+
+	public static $rules = array(
+		'email' => 'required|max:200|unique:users|email',
+		'first_name' => 'required|max:50',
+		'last_name' => 'required|max:50',
+		'password' => 'required|min:7',
+		'password_confirm' => 'required|same:password'
+		);
+
+
 	/**
 	 * Get the password for the user.
 	 *
