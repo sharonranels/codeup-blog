@@ -13,7 +13,10 @@
 
 <div class="row item_box">
   <div class="col-sm-6"><img ALIGN="Left" src="/img/Iwantit.png" alt="Capstone Image" class="capstone-image">
-  <p><a href="https://github.com/blind-squirrel/blind-squirrel/tree/Sharon" class="btn btn-default" align="left" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p></div>
+    <a href="https://github.com/blind-squirrel/blind-squirrel" class="btn btn-default" align="left" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a>
+    <a href="http://i-want-it.us/" class="btn btn-success" role="button" target="_blank" align="right">Go To Site</a>
+  </div>
+
     <div class="col-sm-6">
       <div class="row">
         <div class="col-md-12">
@@ -26,7 +29,7 @@
                 <li>Admin versus user rights</li>
                 <li>User data change, including password change via email notification</li>
                 <li>Error banner if the data does not meet standard requirements</li>
-                <li>Database interaction, including user ability to add new column headings and update financial information</li>
+                <li>Database interaction</li>
               </ul>
         </div>
       </div>
@@ -38,17 +41,19 @@
 <!-- THUMBNAILS -->
     <div class="row">
       
-      Portfolio Entry #1
+      <!-- Portfolio Entry #1 -->
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail item_box">
           <img src="/img/blog-screenshot.png" alt="Address Book" class="screenshot-thumbnail">
           <div class="caption">
             <h3 class="text-center"><u>Blog</u></h3>
-            <p></p>
+            <p>Features:</p>
             <ul class="port-details">
               <li></li>
-              <li></li>
-              <li></li>
+              <li>Create a new user, login and logout</li>
+              <li>Admin versus user rights</li>
+              <li>Error banner if the data does not meet standard requirements</li>
+              <li>Database interaction</li>
             </ul>
             <p></p>
             <p><a href="https://github.com/sharonranels/codeup-blog" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
@@ -87,7 +92,8 @@
               <li>High-score tracker</li>
               <li>Hit and miss counter</li>
             </ul>
-            <p><a href="https://github.com/sharonranels/codeup.dev/blob/master/public/Whack.html" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a></p>
+            <a href="https://github.com/sharonranels/codeup.dev/blob/master/public/Whack.html" class="btn btn-default" role="button" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="btn-dim"></a>
+            <a href="/Whack.html" class="btn btn-success" role="button" target="_blank">Play Live</a>
           </div>
         </div>
       </div>  <!-- End Portfolio Entry #3 -->
