@@ -20,6 +20,7 @@
 {{ Form::close()}}
 
 <h4 class="white-font top-pad" color:"white">Click a blog title to see more details</h4>
+<h4 class="white-font top-pad" color:"white">You can write your own blog by signing in or registering to this site</h4>
 
 <table class="table show-border">
 	<tr style="border: solid grey 3px;">
