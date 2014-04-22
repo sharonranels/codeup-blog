@@ -28,6 +28,7 @@ a {
   background: white;
   opacity: .66;
   border: solid #999 3px;
+  margin-left: 5px;
 }
 
 .show-border {

@@ -7,14 +7,14 @@
 @section('content')
 
 <div class="blog-header">
-	<h1 class="blog-title">Sharon Ranels</h1>
-	<p class="lead blog-description"><em><strong>Welcome to my Blog!</em></strong></p>
+	<h1 style="color: white;"class="blog-title">Sharon Ranels</h1>
+	<p style="color: #A59E9E;" class="lead blog-description"><em><strong>Welcome to my Blog!</em></strong></p>
 </div>
     
 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class'=>'form-search')) }}
     <div class="input-prepend">
 		<button type="submit" class="btn"><a href="{{{ action( 'PostsController@create') }}}" class="blk-font">Create new blog</a></button> OR 
-        <button type="submit" class="btn search-text">Search for key word(s):</button>
+        <button type="submit" class="btn">Search for key word(s):</button>
         <input type="text" class="top-pad bottom-margin span2 search-query" name="search">
     </div>
 {{ Form::close()}}
