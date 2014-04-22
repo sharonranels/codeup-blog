@@ -22,15 +22,15 @@
 <h4 class="white-font top-pad" color:"white">Click a blog title to see more details</h4>
 
 <table class="table show-border">
-	<tr>
+	<tr style="border: solid grey 3px;">
 		<th>Title</th>
 		<th>Date</th>
 		<th>Blog</th>
 		<th>Image</th>
 	</tr>
 	@foreach ($posts as $post)
-		<tr>
-			<td id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}"><strong>{{{ $post->title }}}</strong></a></td>
+		<tr style="border: solid grey 3px;">
+			<td style="width: 175px;" id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}"><strong>{{{ $post->title }}}</strong></a></td>
 			<td>{{{ $post->created_at->format('n/j/y') }}}</td>
 			<td>{{ Str::words($post->body, 30) }}</td>
 			<td><img class="blog-image" src="{{{ $post->post_image }}}"></td>
