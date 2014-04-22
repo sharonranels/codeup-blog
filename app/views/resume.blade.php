@@ -49,16 +49,13 @@
           <!-- education 1 -->
             <div class="col-sm-6 debug"><strong>LAMP+J Software Development Bootcamp</strong><br>
               <a href="http://www.codeup.com/" target="_blank"><img src="/img/codeup-logo.png" alt="Codeup" class="logo"></a><br>
-              San Antonio, TX<br>
-              <strong>Graduating April 2014</strong>
-              <span class="label label-success">IN PROGRESS</span>
+              San Antonio, TX
             </div>
 
           <!-- education 2 -->
             <div class="col-sm-6 debug"><strong>BA in Business Administration (Accounting)</strong><br>
             Texas Lutheran University<br>
-            Seguin, TX<br>
-            <strong>Graduated 1985</strong>
+            Seguin, TX
             </div>
         </div>
     </div>

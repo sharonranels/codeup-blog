@@ -29,7 +29,7 @@
 		{{ Form::label('password', 'Confirm password') }}
 		{{ Form::password('password_confirm', array('class' => 'form-control width')) }}
 
-		{{ Form::submit('Create new account', array('class' => 'btn btn-lg btn-primary btn-block submit-btn bottom-margin top-pad submit-color  width'))}}
+		{{ Form::submit('Create new account', array('class' => 'btn btn-lg btn-primary btn-block submit-btn bottom-margin top-pad submit-color'))}}
 
 		<button type="submit" class="btn top-pad submit-color"><a href="{{{ action('PostsController@index') }}}"class"blk-font">Cancel</button></p>
 
