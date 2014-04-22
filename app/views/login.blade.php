@@ -7,7 +7,7 @@
 @section('content')
 
 
-	{{ Form::open(array('action' => 'HomeController@doLogin', "class"=>"form-signin")) }}
+	{{ Form::open(array('action' => 'HomeController@doLogin', "class"=>"form-signin signin")) }}
 	    
 	    <h2 class="form-signin-heading">Please sign in</h2>
 

@@ -1,3 +1,4 @@
+
 body {
 background-image: url(/img/flowerpic.jpg);
 background-size: cover;
@@ -13,6 +14,11 @@ color: white;
 
 a {
     color: #ffffff;
+}
+
+.signin {
+  margin-left: 0px;
+  max-width: 500px;
 }
 
 .show-border {

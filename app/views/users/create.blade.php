@@ -9,7 +9,7 @@
 
 
 
-	{{ Form::open(array('action' => 'UserController@store', "class"=>"form-signin")) }}
+	{{ Form::open(array('action' => 'UserController@store', "class"=>"form-signin signin")) }}
 
 	    <h2 class="form-signin-heading width">Please create an account</h2>
 
