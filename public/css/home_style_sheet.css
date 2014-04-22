@@ -9,16 +9,25 @@ position: absolute;
 height: 100%;
 width: 100%;
 margin: 0px;
-color: white;
+/*color: white;*/
 }
 
 a {
-    color: #ffffff;
+    color: black;
 }
 
 .signin {
   margin-left: 0px;
   max-width: 500px;
+}
+
+.home-contact {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: -20px;
+  background: white;
+  opacity: .66;
+  border: solid #999 3px;
 }
 
 .show-border {
@@ -27,11 +36,6 @@ a {
   color: black;
 }
 
-.home-contact {
-  font-size: 20px;
-  margin-top: 20px;
-  margin-left: -20px;
-}
 
 .home-contact div {
     margin-bottom: 20px;

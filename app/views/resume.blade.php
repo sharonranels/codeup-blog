@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-sm-6 debug bottompad">
             <span>San Antonio TX</span><br>
-            <span>(832) 298-4240</span><br>
+            <a href="tel:1-832-298-4240">(832) 298-4240<br>
             <a href="mailto:sharonranels@yahoo.com">sharonranels@yahoo.com</a><br>
           </div>
           <div class="col-sm-6 debug bottompad">

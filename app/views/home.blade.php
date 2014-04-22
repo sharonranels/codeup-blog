@@ -15,7 +15,7 @@
 <!-- CONTACT INFO -->
         
         <div class="col-sm-5 home-contact">
-            <div id="hover-format"><a href="tel:1-832-298-4240">(832) 298-4240</a></div>
+            <div class="top-pad"><a href="tel:1-832-298-4240">(832) 298-4240</a></div>
             <div><a href="mailto:sharonranels@yahoo.com">sharonranels@yahoo.com</a></div>
             <div><a href="https://github.com/sharonranels" target="_blank"><img src="/img/github.jpeg" alt="Git Hub" class="contact-height">&nbsp;&nbsp;github.com/sharonranels</a></div>
             <div><a href="http://www.linkedin.com/in/sharonranels/" target="_blank"><img src="/img/linkedinlogo2.jpeg" alt="Linked In" class="contact-height">&nbsp;&nbsp;linkedin.com/in/sharonranels</a></div>
