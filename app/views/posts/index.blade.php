@@ -25,6 +25,7 @@
 <table class="table show-border">
 	<tr style="border: solid grey 3px;">
 		<th>Title</th>
+		<th>By</th>
 		<th>Date</th>
 		<th>Blog</th>
 		<th>Image</th>
@@ -32,6 +33,7 @@
 	@foreach ($posts as $post)
 		<tr style="border: solid grey 3px;">
 			<td style="width: 175px;" id="hover-color"><a href="{{{ action( 'PostsController@show', $post->id) }}}"><strong>{{{ $post->title }}}</strong></a></td>
+			<td style="width: 175px;">By: {{{ ucfirst($post->user->first_name) . " " . ucfirst(substr($post->user->last_name, 0, 1)) . "."}}}</td>
 			<td>{{{ $post->created_at->format('n/j/y') }}}</td>
 			<td>{{ Str::words($post->body, 30) }}</td>
 			<td><img class="blog-image" src="{{{ $post->post_image }}}"></td>
