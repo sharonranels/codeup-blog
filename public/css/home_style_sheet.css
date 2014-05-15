@@ -91,3 +91,8 @@ a {
 .width {
   width: 500px;
 }
+
+.blog-back {
+  background: white;
+  opacity: .66;
+}
