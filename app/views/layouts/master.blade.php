@@ -17,7 +17,7 @@
 
      <link href="/css/signin.css" rel="stylesheet">
 
-    <script src="http://blog.dev/js/ckeditor/ckeditor.js"></script>
+    <script src="/js/ckeditor/ckeditor.js"></script>
 
 @yield('top-script')
 
